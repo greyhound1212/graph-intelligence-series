@@ -1,0 +1,20 @@
+{
+  "dataset": "HBL-03",
+  "version": "1.0.0",
+  "seed": 202703,
+  "synthetic": true,
+  "domain_nodes": 450,
+  "domain_relationships": 1800,
+  "sources": 150,
+  "assertions": 1800,
+  "evidence_links": 1800,
+  "total_nodes": 2400,
+  "total_relationships": 7200,
+  "sha256": {
+    "nodes.csv": "10f9d2a77caeb311fe90ac31f33a89ea243b4747ed7fc28db3feaa6fdda335c6",
+    "relationships.csv": "0d3b38275b0132ff15b0e7434ae1f0d672dbcc8f8079907f8b8d31693cc01dd9",
+    "sources.csv": "831f152dada4ffaf8691e010d5e7342882c4d40619f6da44770afeffa504ae42",
+    "assertions.csv": "5f9e731cd8cc0f53aa814d55ed503c796710a8c3165f01f98cce55e30f7a8949",
+    "evidence.csv": "52860c51ea7479df674f8ba3eb72598aa19095acbed04ccf2fc523d291f709b4"
+  }
+}

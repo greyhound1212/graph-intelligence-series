@@ -24,7 +24,13 @@ from neo4j import GraphDatabase
 
 # Project configuration
 ROOT = Path(__file__).resolve().parent.parent
-DATA_DIR = ROOT / "data"
+DATASET_ID = os.getenv("HARBORLIGHT_DATASET", "hbl-01").lower()
+ALLOWED_DATASETS = {f"hbl-{number:02d}" for number in range(1, 7)}
+
+if DATASET_ID not in ALLOWED_DATASETS:
+    raise ValueError(f"Unsupported dataset: {DATASET_ID}")
+
+DATA_DIR = ROOT / "data" / DATASET_ID
 CONSTRAINTS_FILE = Path(__file__).with_name("constraints.cypher")
 ENV_FILE = ROOT / ".env"
 
